@@ -1,4 +1,25 @@
-var swiper = new Swiper(".mySwiperBanner", {
+function openNav() {
+  document.getElementById("menu").style.width = "100%";
+  document.getElementById("menu").style.left = "0";
+}
+
+function closeNav() {
+  document.getElementById("menu").style.width = "0%";
+  document.getElementById("menu").style.left = "-100%";
+}
+
+const header = document.querySelector(".header");
+const headerHeight = parseInt(window.getComputedStyle(header).height);
+
+document.addEventListener("scroll", function () {
+  if (window.scrollY > headerHeight) {
+    header.classList.add("header_scroll");
+  } else {
+    header.classList.remove("header_scroll");
+  }
+});
+
+var swiperBanner = new Swiper(".mySwiperBanner", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -41,36 +62,34 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-var mySwiperServiceList = new Swiper(".mySwiperServiceList", {
-  /*   autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      }, */
+
+var swiper = new Swiper(".mySwiperServiceList", {
+ 
   breakpoints: {
     640: {
-      slidesPerView: 1,
-      spaceBetween: 5,
+      slidesPerView: 2,
+      spaceBetween: 0,
       grid: {
         rows: 2,
       },
     },
     768: {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 0,
+      grid: {
+        rows: 2,
+      },
+    },
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 0,
       grid: {
         rows: 2,
       },
     },
     1200: {
       slidesPerView: 2,
-      spaceBetween: 12,
-      grid: {
-        rows: 2,
-      },
-    },
-    1500: {
-      slidesPerView: 2,
-      spaceBetween: 24,
+      spaceBetween: 0,
       grid: {
         rows: 2,
       },
@@ -115,15 +134,16 @@ var swiper = new Swiper(".mySwiperCampaigns", {
       slidesPerView: 2,
       spaceBetween: 50,
     },
-   
   },
 });
 var swiper = new Swiper(".mySwiperCompany", {
-  spaceBetween: 30,
+  spaceBetween: 10,
+  loop: true,
+  slidesPerView: 2,
   breakpoints: {
     640: {
-      slidesPerView: 1,
-      spaceBetween: 50,
+      slidesPerView: 2,
+      spaceBetween: 0,
     },
     768: {
       slidesPerView: 3,
@@ -133,10 +153,8 @@ var swiper = new Swiper(".mySwiperCompany", {
       slidesPerView: 4,
       spaceBetween: 50,
     },
-   
   },
 });
-
 
 $("input,textarea").val("");
 $(".form-group input, .form-group textarea").focusout(function () {
