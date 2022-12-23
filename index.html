@@ -9,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.1/jquery.fancybox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -47,6 +48,7 @@
             </div>
         </div>
     </header>
+
     <div id="menu" class="menu">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="logo">
@@ -140,6 +142,7 @@
         </div>
        
     </div>
+
     <section class="banner">
         <div class="swiper mySwiperBanner">
             <div class="swiper-wrapper">
@@ -194,7 +197,7 @@
     <section class="speed-appointment">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-6 col-area">
+                <div class="col-xl-6 col-area col-left " data-aos="fade-right">
                     <div class="services-area">
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
@@ -333,7 +336,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-area">
+                <div class="col-xl-6 col-area" data-aos="fade-left">
                     <div class="form-area">
                         <h3>Hızlı Randevu</h3>
                         <span>Size en uygun zamanı belirleyebilmemiz için lütfen formu eksiksiz doldurunuz.</span>
@@ -677,7 +680,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 right-area">
-                    <div class="img-wrapper position-relative">
+                    <div class="img-wrapper position-relative w-100">
                         <div class="modal-toggle">
                             <a href="https://www.youtube.com/watch?v=lzfeEMeJ3oE" class="gallery" data-fancybox="gallery">
                                 <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="120px" width="120px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
@@ -687,7 +690,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <img src="./img/rejuvenating-facial-treatment.jpg" class="img-fluid " alt="we-are">
+                        <img src="./img/rejuvenating-facial-treatment.jpg" class="img-fluid w-100" alt="we-are">
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center">
@@ -863,6 +866,7 @@
             </div>
         </div>
     </section>
+
     <section class="newsletter">
         <div class="container-fluid">
             <div class="row">
@@ -998,7 +1002,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

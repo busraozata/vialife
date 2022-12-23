@@ -27,10 +27,10 @@ var swiperBanner = new Swiper(".mySwiperBanner", {
 });
 
 var swiper = new Swiper(".mySwiper", {
-  /*   autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      }, */
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -64,13 +64,18 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".mySwiperServiceList", {
- 
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
+  effect: "fade",
+
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 0,
       grid: {
-        rows: 2,
+        rows: 1,
       },
     },
     768: {
@@ -98,6 +103,10 @@ var swiper = new Swiper(".mySwiperServiceList", {
 });
 
 var swiper = new Swiper(".mySwiperDoctors", {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
   spaceBetween: 30,
   breakpoints: {
     640: {
@@ -120,6 +129,10 @@ var swiper = new Swiper(".mySwiperDoctors", {
 });
 
 var swiper = new Swiper(".mySwiperCampaigns", {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
   spaceBetween: 30,
   breakpoints: {
     640: {
@@ -137,6 +150,10 @@ var swiper = new Swiper(".mySwiperCampaigns", {
   },
 });
 var swiper = new Swiper(".mySwiperCompany", {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: true,
+  },
   spaceBetween: 10,
   loop: true,
   slidesPerView: 2,
@@ -177,3 +194,5 @@ $(function () {
   });
   /* .datepicker("update", new Date()); */
 });
+
+AOS.init();
