@@ -63,13 +63,14 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
- var swiper = new Swiper(".mySwiperServiceList", {
+var swiper = new Swiper(".mySwiperServiceList", {
+  
   autoplay: {
     delay: 2500,
     disableOnInteraction: true,
-  },
-  effect:"fade",
+    },
+
+    effect: "fade",
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -82,25 +83,19 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 0,
       grid: {
-        rows: 2,
+        rows: 1,
       },
     },
     1024: {
       slidesPerView: 1,
       spaceBetween: 0,
       grid: {
-        rows: 2,
+        rows: 1,
       },
     },
-    1200: {
-      slidesPerView: 2,
-      spaceBetween: 0,
-      grid: {
-        rows: 2,
-      },
-    },
+
   },
-}); 
+});
 
 var swiper = new Swiper(".mySwiperDoctors", {
   autoplay: {

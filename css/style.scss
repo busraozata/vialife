@@ -325,7 +325,7 @@ header {
 }
 #menu {
     height: 100%;
-    width: 0%  ;
+    width: 0%;
     position: fixed;
     z-index: 99999999999;
     top: 0;
@@ -398,7 +398,8 @@ header {
                 }
             }
 
-            &:nth-child(2), &:nth-child(4) {
+            &:nth-child(2),
+            &:nth-child(4) {
                 flex-direction: column;
                 position: relative;
                 align-items: flex-start;
@@ -423,7 +424,6 @@ header {
                     }
                 }
             }
-           
 
             a {
                 width: 100%;
@@ -535,7 +535,6 @@ header {
                     color: var(--color-turquoise);
                     font-weight: 600;
                     font-size: 0.9rem !important;
-                   
                 }
                 margin-top: 0.8rem;
             }
@@ -1056,8 +1055,6 @@ header {
         }
     }
 
-    
-
     .services-area {
         position: relative;
         height: 100%;
@@ -1093,9 +1090,33 @@ header {
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
-            &:nth-child(2n + 0) .row {
-                flex-direction: row-reverse;
+            height: 100vh !important;
+            .test{
+                &:nth-child(3) .row{
+                    flex-direction: row-reverse;
+                }
+                &:nth-child(4) .row{
+                    flex-direction: row-reverse;
+                }
             }
+           
+           /*  &:nth-child(2n + 0) .row .test .row {
+                flex-direction: row-reverse;
+            } */
+            .row {
+                height: 100%;
+            }
+            /*  .testt {
+                height: 100%;
+                &:nth-child(2n + 0) .row {
+                    flex-direction: row-reverse;
+                }
+                .test {
+                    &:nth-child(2n + 0) .row {
+                        flex-direction: row-reverse;
+                    }
+                }
+            } */
 
             .content {
                 padding: 1.5rem;

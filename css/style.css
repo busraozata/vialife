@@ -1418,13 +1418,39 @@ header .wrapper .burger__line_fourth {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 100vh !important;
+  /*  &:nth-child(2n + 0) .row .test .row {
+                flex-direction: row-reverse;
+            } */
+  /*  .testt {
+                height: 100%;
+                &:nth-child(2n + 0) .row {
+                    flex-direction: row-reverse;
+                }
+                .test {
+                    &:nth-child(2n + 0) .row {
+                        flex-direction: row-reverse;
+                    }
+                }
+            } */
 }
 
-.our-services .services-area .swiper-slide:nth-child(2n + 0) .row {
+.our-services .services-area .swiper-slide .test:nth-child(3) .row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+.our-services .services-area .swiper-slide .test:nth-child(4) .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.our-services .services-area .swiper-slide .row {
+  height: 100%;
 }
 
 .our-services .services-area .swiper-slide .content {
