@@ -68,7 +68,7 @@ var swiper = new Swiper(".mySwiperServiceList", {
     delay: 2500,
     disableOnInteraction: true,
   },
-  effect: "fade",
+  /* effect: "fade", */
 
   breakpoints: {
     640: {
