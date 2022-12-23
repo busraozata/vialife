@@ -63,13 +63,13 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var swiper = new Swiper(".mySwiperServiceList", {
+
+ var swiper = new Swiper(".mySwiperServiceList", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: true,
   },
-  /* effect: "fade", */
-
+  effect:"fade",
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -100,7 +100,7 @@ var swiper = new Swiper(".mySwiperServiceList", {
       },
     },
   },
-});
+}); 
 
 var swiper = new Swiper(".mySwiperDoctors", {
   autoplay: {
@@ -194,5 +194,14 @@ $(function () {
   });
   /* .datepicker("update", new Date()); */
 });
+
+/* ------------------------------------------------------------- */
+
+$(".mega-dropdown .sub-menu .box").on("mouseover", function () {
+  var imgPath = $(this).attr("data-image");
+
+  $(".mega-dropdown .img-wrapper img").attr("src", imgPath);
+});
+/* ------------------------------------------------------------- */
 
 AOS.init();
