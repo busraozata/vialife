@@ -188,6 +188,9 @@ header {
         align-items: center;
         padding: 4rem 0rem;
         z-index: 99999999;
+        @media screen and (max-width:1440px) {
+            padding: 3rem 0rem;
+        }
         @media screen and (max-width: $lg-breakpoint) {
             padding: 3.4rem 0rem;
         }
@@ -197,6 +200,10 @@ header {
         .wrapper .burger {
             width: 52px;
             height: 32px;
+            @media screen and (max-width: 1440px) {
+                width: 45px;
+                height: 30px;
+            }
             @media screen and (max-width: $sm-breakpoint) {
                 width: 30px;
                 height: 22px;
@@ -213,6 +220,9 @@ header {
             .logo {
                 img {
                     max-width: 13rem;
+                    @media screen and (max-width: 1440px) {
+                        max-width: 10rem;
+                    }
                     @media screen and (max-width: $lg-breakpoint) {
                         max-width: 10rem;
                     }
@@ -1106,17 +1116,7 @@ header {
             .row {
                 height: 100%;
             }
-            /*  .testt {
-                height: 100%;
-                &:nth-child(2n + 0) .row {
-                    flex-direction: row-reverse;
-                }
-                .test {
-                    &:nth-child(2n + 0) .row {
-                        flex-direction: row-reverse;
-                    }
-                }
-            } */
+            
 
             .content {
                 padding: 1.5rem;
@@ -1151,18 +1151,25 @@ header {
                         bottom: 0;
                         display: block;
                         margin: 1rem 0rem 2rem 0rem;
-                        @media screen and (max-width: $sm-breakpoint) {
+                        @media screen and (max-width: $xl-breakpoint) {
                             margin: 1rem 0rem 0.5rem 0rem;
                         }
                     }
-                    @media screen and (max-width: $sm-breakpoint) {
+                    @media screen and (max-width: 1440px) {
+                        font-size: 1.7rem;
+                    }
+                    @media screen and (max-width: $xl-breakpoint) {
                         font-size: 1.4rem;
                     }
+                    
                 }
                 p {
                     font-weight: 300;
                     color: var(--color-white);
                     font-size: 0.9rem;
+                    @media screen and (max-width: $xl-breakpoint) {
+                        font-size: 0.8rem;
+                    }
                     @media screen and (max-width: $sm-breakpoint) {
                         font-size: 0.8rem;
                     }
