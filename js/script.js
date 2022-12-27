@@ -64,13 +64,12 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".mySwiperServiceList", {
-  
   autoplay: {
     delay: 2500,
     disableOnInteraction: true,
-    },
+  },
 
-    effect: "fade",
+  effect: "fade",
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -93,7 +92,6 @@ var swiper = new Swiper(".mySwiperServiceList", {
         rows: 1,
       },
     },
-
   },
 });
 
@@ -200,3 +198,20 @@ $(".mega-dropdown .sub-menu .box").on("mouseover", function () {
 /* ------------------------------------------------------------- */
 
 AOS.init();
+
+var val = 0;
+var stepLi = $(".steps li");
+
+stepLi.eq(val).addClass("active");
+
+setInterval(function () {
+  if (val <= stepLi.length) {
+    stepLi.removeClass("active");
+    stepLi.eq(val).addClass("active");
+    val++;
+  } else {
+    val = 0;
+    clearInterval(this);
+    stepLi.eq(val).addClass("active");
+  }
+}, 4000);
